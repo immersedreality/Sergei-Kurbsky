@@ -12,9 +12,12 @@ import AVFoundation
 import Network
 import ContactsUI
 import MultipeerConnectivity
+import GoogleMobileAds
 
 class ChestViewController: UIViewController {
     
+    @IBOutlet weak var adBannerView: GADBannerView!
+
     @IBOutlet weak var lockOneImageView: LockImageView!
     @IBOutlet weak var lockTwoImageView: LockImageView!
     @IBOutlet weak var lockThreeImageView: LockImageView!
@@ -39,12 +42,24 @@ class ChestViewController: UIViewController {
     var appTimer = Timer()
 
     override func viewDidLoad() {
+        configureAdBanner()
         configureLocks()
         startEvents()
         activateAudioSession()
         configureNetworkMonitor()
         configureServiceAdvertiserAndBrowser()
         configureContactPicker()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        showLetterIfFirstTimeOpeningApp()
+    }
+
+    private func configureAdBanner() {
+//        adBannerView.adUnitID = "ca-app-pub-7985623540006861/3779903342"
+        adBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        adBannerView.rootViewController = self
+        adBannerView.isAutoloadEnabled = true
     }
 
     private func configureLocks() {
@@ -59,6 +74,13 @@ class ChestViewController: UIViewController {
         allLocks.append(lockNineImageView)
         allLocks.append(lockTenImageView)
         allLocks.forEach { $0.configureSoundEffects() }
+    }
+
+    private func showLetterIfFirstTimeOpeningApp() {
+        if UserDefaults.standard.bool(forKey: "UserIsReturning") == false {
+            performSegue(withIdentifier: "PresentLetterViewController", sender: self)
+            UserDefaults.standard.set(true, forKey: "UserIsReturning")
+        }
     }
 
     private func checkIfChestShouldOpen() {
@@ -81,6 +103,7 @@ class ChestViewController: UIViewController {
     }
 
     @IBAction func presentLetterButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "PresentLetterViewController", sender: self)
     }
 
 }

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Yw-Bk-HbZ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Letter View Controller-->
+        <scene sceneID="m5M-dd-1wG">
+            <objects>
+                <viewController id="9Yw-Bk-HbZ" customClass="LetterViewController" customModule="The_Last_Will_And_Testament_Of_Sergei_Kurbsky" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3sf-BJ-cIc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnE-Hn-nlx">
+                                <rect key="frame" x="32" y="108" width="350" height="341"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">I, Sergei Kurbsky, have locked my greatest treasure in the chest I’ve kept hidden in my home these last sixty years.
+
+Through means that can only be described as magic, I have connected it in many different ways to the very device you hold in your hand.
+
+To whomever is able to open it: what’s inside is yours entirely.
+
+Warmest regards,
+Sergei
+
+P.S. Look beyond your immediate surroundings, embrace solitude but never go it alone, and knock quickly but gently to stay in contact.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adI-J2-cuO" userLabel="Modal Swipe Indicator">
+                                <rect key="frame" x="187" y="56" width="40" height="6"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="2qP-XF-MKG"/>
+                                    <constraint firstAttribute="width" constant="40" id="9NA-49-65u"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PnE-Hn-nlx" firstAttribute="top" secondItem="WyP-PI-e2f" secondAttribute="top" constant="64" id="1yW-go-oGL"/>
+                            <constraint firstItem="PnE-Hn-nlx" firstAttribute="leading" secondItem="WyP-PI-e2f" secondAttribute="leading" constant="32" id="GBd-mT-XLl"/>
+                            <constraint firstItem="WyP-PI-e2f" firstAttribute="trailing" secondItem="PnE-Hn-nlx" secondAttribute="trailing" constant="32" id="R79-8u-tIK"/>
+                            <constraint firstItem="adI-J2-cuO" firstAttribute="top" secondItem="WyP-PI-e2f" secondAttribute="top" constant="12" id="jsq-Up-WOw"/>
+                            <constraint firstItem="adI-J2-cuO" firstAttribute="centerX" secondItem="WyP-PI-e2f" secondAttribute="centerX" id="uhE-Y2-NZO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WyP-PI-e2f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tb2-NH-des" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-43" y="58"/>
+        </scene>
+    </scenes>
+</document>

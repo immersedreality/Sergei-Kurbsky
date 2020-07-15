@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,10 +16,40 @@
 		B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0524BEB47600AC30D2 /* Lock.flac */; };
 		B8E48A0824BEB47600AC30D2 /* Unlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0624BEB47600AC30D2 /* Unlock.wav */; };
 		B8E48A0A24BED64400AC30D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0924BED64400AC30D2 /* Settings.bundle */; };
+		B8E48A0E24BF537E00AC30D2 /* Letter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0D24BF537E00AC30D2 /* Letter.storyboard */; };
+		B8E48A1024BF539E00AC30D2 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E48A0F24BF539E00AC30D2 /* LetterViewController.swift */; };
+		B8E48A1724BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */; };
+		B8E48A1824BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8E48A1924BF5A9700AC30D2 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */; };
+		B8E48A1A24BF5A9700AC30D2 /* GoogleMobileAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B8E48A1B24BF5A9700AC30D2 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */; };
+		B8E48A1C24BF5A9700AC30D2 /* nanopb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B8E48A1D24BF5A9700AC30D2 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */; };
+		B8E48A1E24BF5A9700AC30D2 /* PromisesObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B8E48A1F24BF5A9700AC30D2 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */; };
+		B8E48A2024BF5A9700AC30D2 /* GoogleUtilities.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B8E48A2124BF5A9700AC30D2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B8E48A2024BF5A9700AC30D2 /* GoogleUtilities.xcframework in Embed Frameworks */,
+				B8E48A1C24BF5A9700AC30D2 /* nanopb.xcframework in Embed Frameworks */,
+				B8E48A1A24BF5A9700AC30D2 /* GoogleMobileAds.framework in Embed Frameworks */,
+				B8E48A1824BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Embed Frameworks */,
+				B8E48A1E24BF5A9700AC30D2 /* PromisesObjC.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		B8AEDC7224BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Last Will And Testament Of Sergei Kurbsky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AEDC7224BE9ACF004DE733 /* Sergei Kurbsky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sergei Kurbsky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8AEDC7924BE9ACF004DE733 /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
 		B8AEDC7C24BE9ACF004DE733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chest.storyboard; sourceTree = "<group>"; };
@@ -30,6 +60,13 @@
 		B8E48A0524BEB47600AC30D2 /* Lock.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lock.flac; sourceTree = "<group>"; };
 		B8E48A0624BEB47600AC30D2 /* Unlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Unlock.wav; sourceTree = "<group>"; };
 		B8E48A0924BED64400AC30D2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		B8E48A0D24BF537E00AC30D2 /* Letter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Letter.storyboard; sourceTree = "<group>"; };
+		B8E48A0F24BF539E00AC30D2 /* LetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
+		B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = GoogleMobileAdsSdk/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
+		B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = GoogleMobileAdsSdk/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = GoogleMobileAdsSdk/nanopb.xcframework; sourceTree = "<group>"; };
+		B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = GoogleMobileAdsSdk/PromisesObjC.xcframework; sourceTree = "<group>"; };
+		B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = GoogleMobileAdsSdk/GoogleUtilities.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +74,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E48A1F24BF5A9700AC30D2 /* GoogleUtilities.xcframework in Frameworks */,
+				B8E48A1B24BF5A9700AC30D2 /* nanopb.xcframework in Frameworks */,
+				B8E48A1924BF5A9700AC30D2 /* GoogleMobileAds.framework in Frameworks */,
+				B8E48A1724BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Frameworks */,
+				B8E48A1D24BF5A9700AC30D2 /* PromisesObjC.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,13 +91,14 @@
 				B8E48A0924BED64400AC30D2 /* Settings.bundle */,
 				B8AEDC7324BE9ACF004DE733 /* Products */,
 				B8AEDC7424BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */,
+				B8E48A1124BF5A9700AC30D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		B8AEDC7324BE9ACF004DE733 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B8AEDC7224BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky.app */,
+				B8AEDC7224BE9ACF004DE733 /* Sergei Kurbsky.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +119,7 @@
 			children = (
 				B8AEDC7B24BE9ACF004DE733 /* Chest.storyboard */,
 				B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */,
+				B8E48A0D24BF537E00AC30D2 /* Letter.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -85,6 +129,7 @@
 			children = (
 				B8AEDC7924BE9ACF004DE733 /* ChestViewController.swift */,
 				B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */,
+				B8E48A0F24BF539E00AC30D2 /* LetterViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -108,6 +153,18 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
+		B8E48A1124BF5A9700AC30D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */,
+				B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */,
+				B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */,
+				B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */,
+				B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,6 +175,7 @@
 				B8AEDC6E24BE9ACF004DE733 /* Sources */,
 				B8AEDC6F24BE9ACF004DE733 /* Frameworks */,
 				B8AEDC7024BE9ACF004DE733 /* Resources */,
+				B8E48A2124BF5A9700AC30D2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,7 +183,7 @@
 			);
 			name = "The Last Will And Testament Of Sergei Kurbsky";
 			productName = "The Last Will And Testament Of Sergei Kurbsky";
-			productReference = B8AEDC7224BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky.app */;
+			productReference = B8AEDC7224BE9ACF004DE733 /* Sergei Kurbsky.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,6 +227,7 @@
 				B8E48A0824BEB47600AC30D2 /* Unlock.wav in Resources */,
 				B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */,
 				B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */,
+				B8E48A0E24BF537E00AC30D2 /* Letter.storyboard in Resources */,
 				B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */,
 				B8E48A0A24BED64400AC30D2 /* Settings.bundle in Resources */,
 				B8AEDC7D24BE9ACF004DE733 /* Chest.storyboard in Resources */,
@@ -182,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E48A1024BF539E00AC30D2 /* LetterViewController.swift in Sources */,
 				B8AEDC7A24BE9ACF004DE733 /* ChestViewController.swift in Sources */,
 				B8AEDC7624BE9ACF004DE733 /* AppDelegate.swift in Sources */,
 				B8AEDC8D24BE9DA6004DE733 /* LockImageView.swift in Sources */,
@@ -330,14 +390,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNM9247SFR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdk",
+				);
 				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sergei Kurbsky";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -349,14 +414,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNM9247SFR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GoogleMobileAdsSdk",
+				);
 				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Sergei Kurbsky";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
