@@ -15,6 +15,7 @@
 		B8AEDC8D24BE9DA6004DE733 /* LockImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */; };
 		B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0524BEB47600AC30D2 /* Lock.flac */; };
 		B8E48A0824BEB47600AC30D2 /* Unlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0624BEB47600AC30D2 /* Unlock.wav */; };
+		B8E48A0A24BED64400AC30D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0924BED64400AC30D2 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockImageView.swift; sourceTree = "<group>"; };
 		B8E48A0524BEB47600AC30D2 /* Lock.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lock.flac; sourceTree = "<group>"; };
 		B8E48A0624BEB47600AC30D2 /* Unlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Unlock.wav; sourceTree = "<group>"; };
+		B8E48A0924BED64400AC30D2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		B8AEDC6924BE9ACF004DE733 = {
 			isa = PBXGroup;
 			children = (
+				B8E48A0924BED64400AC30D2 /* Settings.bundle */,
 				B8AEDC7324BE9ACF004DE733 /* Products */,
 				B8AEDC7424BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */,
 			);
@@ -167,6 +170,7 @@
 				B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */,
 				B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */,
 				B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */,
+				B8E48A0A24BED64400AC30D2 /* Settings.bundle in Resources */,
 				B8AEDC7D24BE9ACF004DE733 /* Chest.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

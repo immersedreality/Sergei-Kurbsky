@@ -9,6 +9,9 @@
 import UIKit
 import CoreMotion
 import AVFoundation
+import Network
+import ContactsUI
+import MultipeerConnectivity
 
 class ChestViewController: UIViewController {
     
@@ -29,12 +32,19 @@ class ChestViewController: UIViewController {
     var lockThreeIsEnabled: Bool = false
     let motionManager = CMMotionManager()
     let audioSession = AVAudioSession.sharedInstance()
+    let networkMonitor = NWPathMonitor()
+    var serviceAdvertiser: MCNearbyServiceAdvertiser?
+    var serviceBrowser: MCNearbyServiceBrowser?
+
     var appTimer = Timer()
 
     override func viewDidLoad() {
         configureLocks()
-        startProcessingGyroEvents()
+        startEvents()
         activateAudioSession()
+        configureNetworkMonitor()
+        configureServiceAdvertiserAndBrowser()
+        configureContactPicker()
     }
 
     private func configureLocks() {
@@ -67,7 +77,7 @@ class ChestViewController: UIViewController {
     }
 
     private func openChest() {
-
+        chestImageView.backgroundColor = .blue
     }
 
     @IBAction func presentLetterButtonTapped(_ sender: Any) {
@@ -137,11 +147,6 @@ extension ChestViewController {
         }
     }
 
-}
-
-//LockThree
-extension ChestViewController {
-
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         guard lockThreeIsEnabled else { return }
         if motion == .motionShake {
@@ -151,13 +156,12 @@ extension ChestViewController {
             }
         }
     }
-
 }
 
-//LocksFourFiveAndSix {
+//LocksFourFiveSixAndSeven
 extension ChestViewController: AVAudioRecorderDelegate {
 
-    private func startProcessingGyroEvents() {
+    private func startEvents() {
         if motionManager.isGyroAvailable && motionManager.isAccelerometerAvailable {
             motionManager.gyroUpdateInterval = 1.0/60.0
             motionManager.startGyroUpdates()
@@ -202,6 +206,17 @@ extension ChestViewController: AVAudioRecorderDelegate {
                     }
                 }
 
+                if UserDefaults.standard.bool(forKey: "seven") == true {
+                    if self.lockSevenImageView.checkIfUnlocked() == false {
+                        self.lockSevenImageView.unlock()
+                        self.checkIfChestShouldOpen()
+                    }
+                } else {
+                    if self.lockSevenImageView.checkIfUnlocked() == true {
+                        self.lockSevenImageView.lock()
+                    }
+                }
+
             })
 
             RunLoop.current.add(self.appTimer, forMode: RunLoop.Mode.default)
@@ -211,6 +226,81 @@ extension ChestViewController: AVAudioRecorderDelegate {
 
     private func activateAudioSession() {
         try? audioSession.setActive(true)
+    }
+
+}
+
+//LockEight
+extension ChestViewController {
+
+    private func configureNetworkMonitor() {
+        networkMonitor.pathUpdateHandler = { path in
+            if path.status == .unsatisfied {
+                if self.lockEightImageView.checkIfUnlocked() == false {
+                    self.lockEightImageView.unlock()
+                    self.checkIfChestShouldOpen()
+                }
+            } else {
+                if self.lockEightImageView.checkIfUnlocked() == true {
+                    self.lockEightImageView.lock()
+                }
+            }
+        }
+        networkMonitor.start(queue: .main)
+    }
+
+}
+
+//LockNine
+extension ChestViewController: MCNearbyServiceBrowserDelegate {
+
+    private func configureServiceAdvertiserAndBrowser() {
+        let myPeerId = MCPeerID(displayName: UIDevice.current.name)
+        self.serviceAdvertiser = MCNearbyServiceAdvertiser(peer: myPeerId, discoveryInfo: nil, serviceType: "sergeikurbsky")
+        self.serviceAdvertiser?.startAdvertisingPeer()
+
+        self.serviceBrowser = MCNearbyServiceBrowser(peer: myPeerId, serviceType: "sergeikurbsky")
+        self.serviceBrowser?.delegate = self
+        self.serviceBrowser?.startBrowsingForPeers()
+    }
+
+    func browser(_ browser: MCNearbyServiceBrowser, foundPeer peerID: MCPeerID, withDiscoveryInfo info: [String : String]?) {
+        if self.lockNineImageView.checkIfUnlocked() == false {
+            self.lockNineImageView.unlock()
+            self.checkIfChestShouldOpen()
+        }
+    }
+
+    func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
+        if self.lockNineImageView.checkIfUnlocked() == true {
+            self.lockNineImageView.lock()
+        }
+    }
+
+}
+
+//LockTen
+extension ChestViewController: CNContactPickerDelegate {
+
+    private func configureContactPicker() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(launchContactPicker))
+        tapGestureRecognizer.numberOfTapsRequired = 13
+        view.addGestureRecognizer(tapGestureRecognizer)
+    }
+
+    @objc func launchContactPicker() {
+        let contactPickerViewController = CNContactPickerViewController()
+        contactPickerViewController.delegate = self
+        present(contactPickerViewController, animated: true, completion: nil)
+    }
+
+    func contactPicker(_ picker: CNContactPickerViewController, didSelect contact: CNContact) {
+        if contact.givenName == "Sergei" && contact.familyName == "Kurbsky" {
+            if self.lockTenImageView.checkIfUnlocked() == false {
+                self.lockTenImageView.unlock()
+                self.checkIfChestShouldOpen()
+            }
+        }
     }
 
 }
