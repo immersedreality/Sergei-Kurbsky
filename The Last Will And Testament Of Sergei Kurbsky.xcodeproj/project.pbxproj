@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8AEDC7624BE9ACF004DE733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */; };
+		B8AEDC7824BE9ACF004DE733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC7724BE9ACF004DE733 /* SceneDelegate.swift */; };
+		B8AEDC7A24BE9ACF004DE733 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC7924BE9ACF004DE733 /* ViewController.swift */; };
+		B8AEDC7D24BE9ACF004DE733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC7B24BE9ACF004DE733 /* Main.storyboard */; };
+		B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */; };
+		B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B8AEDC7224BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Last Will And Testament Of Sergei Kurbsky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8AEDC7724BE9ACF004DE733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B8AEDC7924BE9ACF004DE733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B8AEDC7C24BE9ACF004DE733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B8AEDC8124BE9AD1004DE733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B8AEDC8324BE9AD1004DE733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B8AEDC6F24BE9ACF004DE733 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B8AEDC6924BE9ACF004DE733 = {
+			isa = PBXGroup;
+			children = (
+				B8AEDC7424BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */,
+				B8AEDC7324BE9ACF004DE733 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B8AEDC7324BE9ACF004DE733 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8AEDC7224BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B8AEDC7424BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */ = {
+			isa = PBXGroup;
+			children = (
+				B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */,
+				B8AEDC7724BE9ACF004DE733 /* SceneDelegate.swift */,
+				B8AEDC7924BE9ACF004DE733 /* ViewController.swift */,
+				B8AEDC7B24BE9ACF004DE733 /* Main.storyboard */,
+				B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */,
+				B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */,
+				B8AEDC8324BE9AD1004DE733 /* Info.plist */,
+			);
+			path = "The Last Will And Testament Of Sergei Kurbsky";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B8AEDC7124BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8AEDC8624BE9AD1004DE733 /* Build configuration list for PBXNativeTarget "The Last Will And Testament Of Sergei Kurbsky" */;
+			buildPhases = (
+				B8AEDC6E24BE9ACF004DE733 /* Sources */,
+				B8AEDC6F24BE9ACF004DE733 /* Frameworks */,
+				B8AEDC7024BE9ACF004DE733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "The Last Will And Testament Of Sergei Kurbsky";
+			productName = "The Last Will And Testament Of Sergei Kurbsky";
+			productReference = B8AEDC7224BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B8AEDC6A24BE9ACF004DE733 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Bozo Design Labs";
+				TargetAttributes = {
+					B8AEDC7124BE9ACF004DE733 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+				};
+			};
+			buildConfigurationList = B8AEDC6D24BE9ACF004DE733 /* Build configuration list for PBXProject "The Last Will And Testament Of Sergei Kurbsky" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B8AEDC6924BE9ACF004DE733;
+			productRefGroup = B8AEDC7324BE9ACF004DE733 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B8AEDC7124BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B8AEDC7024BE9ACF004DE733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */,
+				B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */,
+				B8AEDC7D24BE9ACF004DE733 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B8AEDC6E24BE9ACF004DE733 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8AEDC7A24BE9ACF004DE733 /* ViewController.swift in Sources */,
+				B8AEDC7624BE9ACF004DE733 /* AppDelegate.swift in Sources */,
+				B8AEDC7824BE9ACF004DE733 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B8AEDC7B24BE9ACF004DE733 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8AEDC7C24BE9ACF004DE733 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B8AEDC8124BE9AD1004DE733 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B8AEDC8424BE9AD1004DE733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B8AEDC8524BE9AD1004DE733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8AEDC8724BE9AD1004DE733 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LNM9247SFR;
+				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B8AEDC8824BE9AD1004DE733 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LNM9247SFR;
+				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B8AEDC6D24BE9ACF004DE733 /* Build configuration list for PBXProject "The Last Will And Testament Of Sergei Kurbsky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8AEDC8424BE9AD1004DE733 /* Debug */,
+				B8AEDC8524BE9AD1004DE733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8AEDC8624BE9AD1004DE733 /* Build configuration list for PBXNativeTarget "The Last Will And Testament Of Sergei Kurbsky" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8AEDC8724BE9AD1004DE733 /* Debug */,
+				B8AEDC8824BE9AD1004DE733 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B8AEDC6A24BE9ACF004DE733 /* Project object */;
+}
