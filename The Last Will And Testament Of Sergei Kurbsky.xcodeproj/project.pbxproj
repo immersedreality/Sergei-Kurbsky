@@ -13,6 +13,8 @@
 		B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */; };
 		B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */; };
 		B8AEDC8D24BE9DA6004DE733 /* LockImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */; };
+		B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0524BEB47600AC30D2 /* Lock.flac */; };
+		B8E48A0824BEB47600AC30D2 /* Unlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0624BEB47600AC30D2 /* Unlock.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B8AEDC8124BE9AD1004DE733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8AEDC8324BE9AD1004DE733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockImageView.swift; sourceTree = "<group>"; };
+		B8E48A0524BEB47600AC30D2 /* Lock.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lock.flac; sourceTree = "<group>"; };
+		B8E48A0624BEB47600AC30D2 /* Unlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Unlock.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +89,20 @@
 		B8AEDC8B24BE9B89004DE733 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B8E48A0424BEB46900AC30D2 /* Audio */,
 				B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */,
 				B8AEDC8324BE9AD1004DE733 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B8E48A0424BEB46900AC30D2 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				B8E48A0524BEB47600AC30D2 /* Lock.flac */,
+				B8E48A0624BEB47600AC30D2 /* Unlock.wav */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,8 +163,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8E48A0824BEB47600AC30D2 /* Unlock.wav in Resources */,
 				B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */,
 				B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */,
+				B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */,
 				B8AEDC7D24BE9ACF004DE733 /* Chest.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNM9247SFR;
 				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +335,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -329,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNM9247SFR;
 				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
