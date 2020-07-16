@@ -68,8 +68,12 @@ class ChestViewController: UIViewController {
     }
 
     private func configureAdBanner() {
-//        adBannerView.adUnitID = "ca-app-pub-7985623540006861/3779903342"
-        adBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        #if DEBUG
+            adBannerView.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        #else
+            adBannerView.adUnitID = "ca-app-pub-7985623540006861/3779903342"
+        #endif
+
         adBannerView.rootViewController = self
         adBannerView.isAutoloadEnabled = true
     }
