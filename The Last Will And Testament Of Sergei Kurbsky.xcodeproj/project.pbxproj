@@ -413,7 +413,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.Sergei-Kurbsky";
 				PRODUCT_NAME = "Sergei Kurbsky";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -437,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.The-Last-Will-And-Testament-Of-Sergei-Kurbsky";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bdl.Sergei-Kurbsky";
 				PRODUCT_NAME = "Sergei Kurbsky";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
