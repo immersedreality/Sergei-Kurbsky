@@ -25,16 +25,19 @@ class LockImageView: UIImageView {
         unlockSound = try? AVAudioPlayer(contentsOf: unlockURL)
     }
 
+    func obliterateSoundEffects() {
+        lockSound = nil
+        unlockSound = nil
+    }
+
     func lock() {
-        image = UIImage(systemName: "lock.fill")
-        tintColor = UIColor.red
+        image = UIImage(named: "Lock-Closed")
         isUnlocked = false
         lockSound?.play()
     }
 
     func unlock() {
-        image = UIImage(systemName: "lock.open.fill")
-        tintColor = UIColor.green
+        image = UIImage(named: "Lock-Open")
         isUnlocked = true
         unlockSound?.play()
     }

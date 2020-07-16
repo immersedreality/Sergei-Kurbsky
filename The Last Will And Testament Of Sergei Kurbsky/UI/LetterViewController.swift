@@ -8,6 +8,4 @@
 
 import UIKit
 
-class LetterViewController: UIViewController {
-    
-}
+class LetterViewController: UIViewController { }

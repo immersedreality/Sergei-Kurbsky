@@ -13,6 +13,7 @@
 		B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */; };
 		B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */; };
 		B8AEDC8D24BE9DA6004DE733 /* LockImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */; };
+		B8DAD8B424BFC7A900FE4AD0 /* ChestOpen.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8DAD8B324BFC7A900FE4AD0 /* ChestOpen.wav */; };
 		B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0524BEB47600AC30D2 /* Lock.flac */; };
 		B8E48A0824BEB47600AC30D2 /* Unlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0624BEB47600AC30D2 /* Unlock.wav */; };
 		B8E48A0A24BED64400AC30D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0924BED64400AC30D2 /* Settings.bundle */; };
@@ -28,6 +29,8 @@
 		B8E48A1E24BF5A9700AC30D2 /* PromisesObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B8E48A1F24BF5A9700AC30D2 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */; };
 		B8E48A2024BF5A9700AC30D2 /* GoogleUtilities.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B8F44CD024BFB53F0084E1B6 /* OpenChest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F44CCF24BFB53F0084E1B6 /* OpenChest.storyboard */; };
+		B8F44CD224BFB5690084E1B6 /* OpenChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F44CD124BFB5690084E1B6 /* OpenChestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -57,6 +60,7 @@
 		B8AEDC8124BE9AD1004DE733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B8AEDC8324BE9AD1004DE733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockImageView.swift; sourceTree = "<group>"; };
+		B8DAD8B324BFC7A900FE4AD0 /* ChestOpen.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ChestOpen.wav; sourceTree = "<group>"; };
 		B8E48A0524BEB47600AC30D2 /* Lock.flac */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lock.flac; sourceTree = "<group>"; };
 		B8E48A0624BEB47600AC30D2 /* Unlock.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Unlock.wav; sourceTree = "<group>"; };
 		B8E48A0924BED64400AC30D2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 		B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = GoogleMobileAdsSdk/nanopb.xcframework; sourceTree = "<group>"; };
 		B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = GoogleMobileAdsSdk/PromisesObjC.xcframework; sourceTree = "<group>"; };
 		B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = GoogleMobileAdsSdk/GoogleUtilities.xcframework; sourceTree = "<group>"; };
+		B8F44CCF24BFB53F0084E1B6 /* OpenChest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OpenChest.storyboard; sourceTree = "<group>"; };
+		B8F44CD124BFB5690084E1B6 /* OpenChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,7 @@
 				B8AEDC7B24BE9ACF004DE733 /* Chest.storyboard */,
 				B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */,
 				B8E48A0D24BF537E00AC30D2 /* Letter.storyboard */,
+				B8F44CCF24BFB53F0084E1B6 /* OpenChest.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -130,6 +137,7 @@
 				B8AEDC7924BE9ACF004DE733 /* ChestViewController.swift */,
 				B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */,
 				B8E48A0F24BF539E00AC30D2 /* LetterViewController.swift */,
+				B8F44CD124BFB5690084E1B6 /* OpenChestViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 		B8E48A0424BEB46900AC30D2 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				B8DAD8B324BFC7A900FE4AD0 /* ChestOpen.wav */,
 				B8E48A0524BEB47600AC30D2 /* Lock.flac */,
 				B8E48A0624BEB47600AC30D2 /* Unlock.wav */,
 			);
@@ -228,7 +237,9 @@
 				B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */,
 				B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */,
 				B8E48A0E24BF537E00AC30D2 /* Letter.storyboard in Resources */,
+				B8F44CD024BFB53F0084E1B6 /* OpenChest.storyboard in Resources */,
 				B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */,
+				B8DAD8B424BFC7A900FE4AD0 /* ChestOpen.wav in Resources */,
 				B8E48A0A24BED64400AC30D2 /* Settings.bundle in Resources */,
 				B8AEDC7D24BE9ACF004DE733 /* Chest.storyboard in Resources */,
 			);
@@ -241,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F44CD224BFB5690084E1B6 /* OpenChestViewController.swift in Sources */,
 				B8E48A1024BF539E00AC30D2 /* LetterViewController.swift in Sources */,
 				B8AEDC7A24BE9ACF004DE733 /* ChestViewController.swift in Sources */,
 				B8AEDC7624BE9ACF004DE733 /* AppDelegate.swift in Sources */,

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ChestViewController" customModule="Sergei_Kurbsky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XhJ-et-Irn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukJ-8D-eI9" customClass="GADBannerView">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aCg-wP-EQk"/>
                                 </constraints>
@@ -24,100 +27,99 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autoloadEnabled" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-an-fpB" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="140" y="82.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="zyt-an-fpB" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="187" y="126" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="nWZ-vF-8AV"/>
                                     <constraint firstAttribute="height" constant="40" id="uJ8-pI-2oG"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1qg-ZM-c74" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="140" y="138.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="1qg-ZM-c74" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="187" y="182" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Dgw-Cl-LsH"/>
                                     <constraint firstAttribute="height" constant="40" id="qIl-6w-PTM"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="VZi-6B-ugQ" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="76" y="82.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="VZi-6B-ugQ" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="123" y="126" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="1tY-la-ei6"/>
                                     <constraint firstAttribute="height" constant="40" id="Oft-y0-oGR"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-7F-qrx" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="12" y="82.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="fhz-7F-qrx" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="59" y="126" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="TQO-B0-YDO"/>
                                     <constraint firstAttribute="height" constant="40" id="zvr-8h-kMM"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dfZ-2w-W8k" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="76" y="138.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="dfZ-2w-W8k" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="123" y="182" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="37c-1w-WH1"/>
                                     <constraint firstAttribute="height" constant="40" id="dQq-y5-WHJ"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qq2-86-HoW" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="12" y="138.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="qq2-86-HoW" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="59" y="182" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="UAg-lm-is7"/>
                                     <constraint firstAttribute="height" constant="40" id="gce-AU-n6r"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EDS-RZ-g8Q" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="204" y="82.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="EDS-RZ-g8Q" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="251" y="126" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="3OS-ct-PHj"/>
                                     <constraint firstAttribute="height" constant="40" id="moz-bL-10u"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-y2-Ywk" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="204" y="138.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="Gxh-y2-Ywk" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="251" y="182" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="G6T-pU-uzW"/>
                                     <constraint firstAttribute="width" constant="40" id="HhP-KR-PZb"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-LQ-13f" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="268" y="138.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="5TX-LQ-13f" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="315" y="182" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7vk-CJ-I8g"/>
                                     <constraint firstAttribute="width" constant="40" id="QGu-7U-hpF"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lock.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ULW-VK-Ek8" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
-                                <rect key="frame" x="268" y="82.5" width="40" height="38.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lock-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="ULW-VK-Ek8" customClass="LockImageView" customModule="Sergei_Kurbsky" customModuleProvider="target">
+                                <rect key="frame" x="315" y="126" width="40" height="40"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="OC1-qC-ffG"/>
                                     <constraint firstAttribute="height" constant="40" id="YIL-Qn-HIN"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Avf-39-b7B">
-                                <rect key="frame" x="10" y="190" width="300" height="300"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chest-Closed" translatesAutoresizingMaskIntoConstraints="NO" id="Avf-39-b7B">
+                                <rect key="frame" x="-16" y="376" width="494" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="C4j-GV-prG"/>
-                                    <constraint firstAttribute="height" constant="300" id="fZC-o4-u25"/>
+                                    <constraint firstAttribute="height" constant="400" id="eR5-UE-x8y"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLO-gN-R5m">
-                                <rect key="frame" x="256" y="504" width="40" height="40"/>
+                                <rect key="frame" x="350" y="798" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Fpx-iS-9zx"/>
                                     <constraint firstAttribute="height" constant="40" id="G5K-JQ-afG"/>
                                 </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="info.circle" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="semibold"/>
                                 </state>
@@ -130,19 +132,22 @@
                         <constraints>
                             <constraint firstItem="1qg-ZM-c74" firstAttribute="leading" secondItem="dfZ-2w-W8k" secondAttribute="trailing" constant="24" id="14s-x7-5iu"/>
                             <constraint firstItem="zyt-an-fpB" firstAttribute="top" secondItem="ukJ-8D-eI9" secondAttribute="bottom" constant="32" id="4VY-bS-B96"/>
-                            <constraint firstItem="Avf-39-b7B" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="8g1-dJ-kri"/>
+                            <constraint firstItem="Avf-39-b7B" firstAttribute="centerY" secondItem="XhJ-et-Irn" secondAttribute="centerY" constant="128" id="7Iv-Nv-zLk"/>
+                            <constraint firstAttribute="bottom" secondItem="XhJ-et-Irn" secondAttribute="bottom" id="8O7-Fd-Une"/>
                             <constraint firstItem="VZi-6B-ugQ" firstAttribute="leading" secondItem="fhz-7F-qrx" secondAttribute="trailing" constant="24" id="GZU-8Y-KqH"/>
                             <constraint firstItem="zyt-an-fpB" firstAttribute="leading" secondItem="VZi-6B-ugQ" secondAttribute="trailing" constant="24" id="IiJ-As-JO4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ukJ-8D-eI9" secondAttribute="trailing" id="Kaf-Jp-5Zg"/>
                             <constraint firstItem="1qg-ZM-c74" firstAttribute="top" secondItem="zyt-an-fpB" secondAttribute="bottom" constant="16" id="NqU-dW-tqM"/>
                             <constraint firstItem="dfZ-2w-W8k" firstAttribute="centerY" secondItem="1qg-ZM-c74" secondAttribute="centerY" id="OC8-xp-kn3"/>
+                            <constraint firstItem="XhJ-et-Irn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Oiz-X4-58l"/>
                             <constraint firstItem="VZi-6B-ugQ" firstAttribute="centerY" secondItem="zyt-an-fpB" secondAttribute="centerY" id="PHy-jB-ekY"/>
                             <constraint firstItem="5TX-LQ-13f" firstAttribute="centerY" secondItem="Gxh-y2-Ywk" secondAttribute="centerY" id="QBd-jR-le3"/>
                             <constraint firstItem="qq2-86-HoW" firstAttribute="centerY" secondItem="dfZ-2w-W8k" secondAttribute="centerY" id="SXX-3E-mFO"/>
-                            <constraint firstItem="Avf-39-b7B" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="56" id="VZZ-vE-cQb"/>
+                            <constraint firstItem="XhJ-et-Irn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WdN-IP-dxT"/>
                             <constraint firstItem="ULW-VK-Ek8" firstAttribute="leading" secondItem="EDS-RZ-g8Q" secondAttribute="trailing" constant="24" id="Z59-qg-NI5"/>
                             <constraint firstItem="ukJ-8D-eI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bWd-FE-pWS"/>
                             <constraint firstItem="dfZ-2w-W8k" firstAttribute="leading" secondItem="qq2-86-HoW" secondAttribute="trailing" constant="24" id="bv3-vO-zDc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Avf-39-b7B" secondAttribute="trailing" constant="-64" id="ge7-Jx-nL4"/>
                             <constraint firstItem="Gxh-y2-Ywk" firstAttribute="centerY" secondItem="1qg-ZM-c74" secondAttribute="centerY" id="iAT-1L-4px"/>
                             <constraint firstItem="ULW-VK-Ek8" firstAttribute="centerY" secondItem="EDS-RZ-g8Q" secondAttribute="centerY" id="jwQ-5R-XPO"/>
                             <constraint firstItem="fhz-7F-qrx" firstAttribute="centerY" secondItem="VZi-6B-ugQ" secondAttribute="centerY" id="kFi-2W-agt"/>
@@ -153,6 +158,8 @@
                             <constraint firstItem="5TX-LQ-13f" firstAttribute="leading" secondItem="Gxh-y2-Ywk" secondAttribute="trailing" constant="24" id="rs0-fg-fmx"/>
                             <constraint firstItem="ukJ-8D-eI9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sq5-V1-Syl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PLO-gN-R5m" secondAttribute="trailing" constant="24" id="t8O-Jr-4nn"/>
+                            <constraint firstItem="Avf-39-b7B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-16" id="uMv-zl-EbF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XhJ-et-Irn" secondAttribute="trailing" id="v7q-pq-58G"/>
                             <constraint firstItem="Gxh-y2-Ywk" firstAttribute="leading" secondItem="1qg-ZM-c74" secondAttribute="trailing" constant="24" id="vrB-kv-yf9"/>
                             <constraint firstItem="zyt-an-fpB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wcz-B4-6va"/>
                         </constraints>
@@ -171,12 +178,22 @@
                         <outlet property="lockTenImageView" destination="5TX-LQ-13f" id="xmQ-y2-0Pz"/>
                         <outlet property="lockThreeImageView" destination="zyt-an-fpB" id="JNI-IR-qau"/>
                         <outlet property="lockTwoImageView" destination="VZi-6B-ugQ" id="eT6-Dg-bRV"/>
+                        <outlet property="showLetterButton" destination="PLO-gN-R5m" id="Dg5-nN-8OY"/>
                         <segue destination="T2a-eV-Mw6" kind="presentation" identifier="PresentLetterViewController" id="xai-RN-5q2"/>
+                        <segue destination="gLv-MZ-Tf2" kind="presentation" identifier="PresentOpenChestViewController" modalPresentationStyle="fullScreen" id="914-1o-JRU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--OpenChest-->
+        <scene sceneID="8Un-5o-uS7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OpenChest" id="gLv-MZ-Tf2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFX-wK-6iF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="706" y="166"/>
         </scene>
         <!--Letter-->
         <scene sceneID="9jR-Dw-Kf1">
@@ -184,11 +201,13 @@
                 <viewControllerPlaceholder storyboardName="Letter" id="T2a-eV-Mw6" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBZ-xX-O3W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688" y="138"/>
+            <point key="canvasLocation" x="681" y="106"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Background" width="3840" height="2485"/>
+        <image name="Chest-Closed" width="1600" height="1280"/>
+        <image name="Lock-Closed" width="400" height="728"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="lock.fill" catalog="system" width="128" height="128"/>
     </resources>
 </document>

@@ -10,28 +10,11 @@
         <!--Letter View Controller-->
         <scene sceneID="m5M-dd-1wG">
             <objects>
-                <viewController id="9Yw-Bk-HbZ" customClass="LetterViewController" customModule="The_Last_Will_And_Testament_Of_Sergei_Kurbsky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9Yw-Bk-HbZ" customClass="LetterViewController" customModule="Sergei_Kurbsky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3sf-BJ-cIc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnE-Hn-nlx">
-                                <rect key="frame" x="32" y="108" width="350" height="341"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">I, Sergei Kurbsky, have locked my greatest treasure in the chest I’ve kept hidden in my home these last sixty years.
-
-Through means that can only be described as magic, I have connected it in many different ways to the very device you hold in your hand.
-
-To whomever is able to open it: what’s inside is yours entirely.
-
-Warmest regards,
-Sergei
-
-P.S. Look beyond your immediate surroundings, embrace solitude but never go it alone, and knock quickly but gently to stay in contact.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adI-J2-cuO" userLabel="Modal Swipe Indicator">
                                 <rect key="frame" x="187" y="56" width="40" height="6"/>
                                 <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -45,21 +28,48 @@ P.S. Look beyond your immediate surroundings, embrace solitude but never go it a
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parchment" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-2V-rLo">
+                                <rect key="frame" x="8" y="94" width="398" height="736"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnE-Hn-nlx">
+                                <rect key="frame" x="24" y="282" width="366" height="360"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">I, Sergei Kurbsky, have locked away a great treasure in the chest I’ve kept hidden in my home these last sixty years.
+
+Through means beyond any explanation I can provide to you at the moment, I have connected it in many ways to the very device you hold in your hand.
+
+To whomever is able to open it: what awaits inside is for you.
+
+Warmest regards,
+Sergei
+
+P.S. Look beyond your immediate surroundings, embrace isolation but never go it alone, and knock quickly but gently to stay in contact.</string>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PnE-Hn-nlx" firstAttribute="top" secondItem="WyP-PI-e2f" secondAttribute="top" constant="64" id="1yW-go-oGL"/>
-                            <constraint firstItem="PnE-Hn-nlx" firstAttribute="leading" secondItem="WyP-PI-e2f" secondAttribute="leading" constant="32" id="GBd-mT-XLl"/>
-                            <constraint firstItem="WyP-PI-e2f" firstAttribute="trailing" secondItem="PnE-Hn-nlx" secondAttribute="trailing" constant="32" id="R79-8u-tIK"/>
+                            <constraint firstItem="aYV-2V-rLo" firstAttribute="top" secondItem="adI-J2-cuO" secondAttribute="bottom" constant="32" id="CUv-jh-B1B"/>
+                            <constraint firstItem="aYV-2V-rLo" firstAttribute="trailing" secondItem="PnE-Hn-nlx" secondAttribute="trailing" constant="16" id="IWk-yZ-os5"/>
+                            <constraint firstItem="WyP-PI-e2f" firstAttribute="trailing" secondItem="aYV-2V-rLo" secondAttribute="trailing" constant="8" id="iRv-2W-W5K"/>
                             <constraint firstItem="adI-J2-cuO" firstAttribute="top" secondItem="WyP-PI-e2f" secondAttribute="top" constant="12" id="jsq-Up-WOw"/>
+                            <constraint firstItem="PnE-Hn-nlx" firstAttribute="centerY" secondItem="aYV-2V-rLo" secondAttribute="centerY" id="rn9-Ni-dXf"/>
+                            <constraint firstItem="WyP-PI-e2f" firstAttribute="bottom" secondItem="aYV-2V-rLo" secondAttribute="bottom" constant="32" id="sl7-sT-pch"/>
                             <constraint firstItem="adI-J2-cuO" firstAttribute="centerX" secondItem="WyP-PI-e2f" secondAttribute="centerX" id="uhE-Y2-NZO"/>
+                            <constraint firstItem="PnE-Hn-nlx" firstAttribute="leading" secondItem="aYV-2V-rLo" secondAttribute="leading" constant="16" id="y2E-Bb-bDJ"/>
+                            <constraint firstItem="aYV-2V-rLo" firstAttribute="leading" secondItem="WyP-PI-e2f" secondAttribute="leading" constant="8" id="y9c-zk-IZN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WyP-PI-e2f"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tb2-NH-des" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-43" y="58"/>
+            <point key="canvasLocation" x="-43.478260869565219" y="57.589285714285708"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Parchment" width="1600" height="2350"/>
+    </resources>
 </document>

@@ -29,6 +29,7 @@ class ChestViewController: UIViewController {
     @IBOutlet weak var lockNineImageView: LockImageView!
     @IBOutlet weak var lockTenImageView: LockImageView!
     @IBOutlet weak var chestImageView: UIImageView!
+    @IBOutlet weak var showLetterButton: UIButton!
     
     var allLocks: [LockImageView] = []
 
@@ -38,12 +39,23 @@ class ChestViewController: UIViewController {
     let networkMonitor = NWPathMonitor()
     var serviceAdvertiser: MCNearbyServiceAdvertiser?
     var serviceBrowser: MCNearbyServiceBrowser?
+    var creakSound: AVAudioPlayer?
 
     var appTimer = Timer()
 
+    var accelerationCheckPassedCount = 0
+    var rotationCheckPassedCount = 0
+
     override func viewDidLoad() {
         configureAdBanner()
+
+        guard UserDefaults.standard.bool(forKey: "RiddleSolved") == false else {
+            configureEmptyRoom()
+            return
+        }
+
         configureLocks()
+        configureCreakSound()
         startEvents()
         activateAudioSession()
         configureNetworkMonitor()
@@ -62,6 +74,23 @@ class ChestViewController: UIViewController {
         adBannerView.isAutoloadEnabled = true
     }
 
+    private func configureEmptyRoom() {
+        allLocks.append(lockOneImageView)
+        allLocks.append(lockTwoImageView)
+        allLocks.append(lockThreeImageView)
+        allLocks.append(lockFourImageView)
+        allLocks.append(lockFiveImageView)
+        allLocks.append(lockSixImageView)
+        allLocks.append(lockSevenImageView)
+        allLocks.append(lockEightImageView)
+        allLocks.append(lockNineImageView)
+        allLocks.append(lockTenImageView)
+
+        allLocks.forEach { $0.isHidden = true }
+        chestImageView.isHidden = true
+        showLetterButton.isHidden = true
+    }
+
     private func configureLocks() {
         allLocks.append(lockOneImageView)
         allLocks.append(lockTwoImageView)
@@ -74,6 +103,12 @@ class ChestViewController: UIViewController {
         allLocks.append(lockNineImageView)
         allLocks.append(lockTenImageView)
         allLocks.forEach { $0.configureSoundEffects() }
+    }
+
+    private func configureCreakSound() {
+        let creakPath = Bundle.main.path(forResource: "ChestOpen.wav", ofType: nil) ?? ""
+        let creakURL = URL(fileURLWithPath: creakPath)
+        creakSound = try? AVAudioPlayer(contentsOf: creakURL)
     }
 
     private func showLetterIfFirstTimeOpeningApp() {
@@ -99,7 +134,10 @@ class ChestViewController: UIViewController {
     }
 
     private func openChest() {
-        chestImageView.backgroundColor = .blue
+        appTimer.invalidate()
+        allLocks.forEach { $0.obliterateSoundEffects() }
+        creakSound?.play()
+        performSegue(withIdentifier: "PresentOpenChestViewController", sender: self)
     }
 
     @IBAction func presentLetterButtonTapped(_ sender: Any) {
@@ -125,7 +163,7 @@ extension ChestViewController {
     }
 
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        chestImageView.gestureRecognizers?.removeAll()
+        chestImageView.gestureRecognizers?.removeAll{ $0 is UIPinchGestureRecognizer }
         lockThreeIsEnabled = false
         if lockOneImageView.checkIfUnlocked() == true {
             lockOneImageView.lock()
@@ -186,32 +224,39 @@ extension ChestViewController: AVAudioRecorderDelegate {
 
     private func startEvents() {
         if motionManager.isGyroAvailable && motionManager.isAccelerometerAvailable {
-            motionManager.gyroUpdateInterval = 1.0/60.0
-            motionManager.startGyroUpdates()
             motionManager.accelerometerUpdateInterval = 1.0/60.0
             motionManager.startAccelerometerUpdates()
+            motionManager.gyroUpdateInterval = 1.0/60.0
+            motionManager.startGyroUpdates()
 
-            appTimer = Timer(fire: Date(), interval: (1.0/60.0), repeats: true, block: { (timer) in
-                if let data = self.motionManager.gyroData {
-                    if data.rotationRate.z < -2 {
+            appTimer = Timer(fire: Date(), interval: (1.0/60.0), repeats: true, block: { (_) in
+
+                if let data = self.motionManager.accelerometerData {
+                    if data.acceleration.z > 0 {
+                        self.accelerationCheckPassedCount += 1
+                        guard self.accelerationCheckPassedCount >= 30 else { return }
                         if self.lockFourImageView.checkIfUnlocked() == false {
                             self.lockFourImageView.unlock()
                             self.checkIfChestShouldOpen()
                         }
                     } else {
+                        self.accelerationCheckPassedCount = 0
                         if self.lockFourImageView.checkIfUnlocked() == true {
                             self.lockFourImageView.lock()
                         }
                     }
                 }
 
-                if let data = self.motionManager.accelerometerData {
-                    if data.acceleration.z > 0 {
+                if let data = self.motionManager.gyroData {
+                    if data.rotationRate.z < -2 {
+                        self.rotationCheckPassedCount += 1
+                        guard self.rotationCheckPassedCount >= 30 else { return }
                         if self.lockFiveImageView.checkIfUnlocked() == false {
                             self.lockFiveImageView.unlock()
                             self.checkIfChestShouldOpen()
                         }
                     } else {
+                        self.rotationCheckPassedCount = 0
                         if self.lockFiveImageView.checkIfUnlocked() == true {
                             self.lockFiveImageView.lock()
                         }
@@ -258,7 +303,9 @@ extension ChestViewController {
 
     private func configureNetworkMonitor() {
         networkMonitor.pathUpdateHandler = { path in
-            if path.status == .unsatisfied {
+            if path.availableInterfaces.contains(where: { (interface) -> Bool in
+                interface.type == .cellular
+            }) == false && path.status == .satisfied {
                 if self.lockEightImageView.checkIfUnlocked() == false {
                     self.lockEightImageView.unlock()
                     self.checkIfChestShouldOpen()
@@ -308,7 +355,8 @@ extension ChestViewController: CNContactPickerDelegate {
     private func configureContactPicker() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(launchContactPicker))
         tapGestureRecognizer.numberOfTapsRequired = 13
-        view.addGestureRecognizer(tapGestureRecognizer)
+        chestImageView.isUserInteractionEnabled = true
+        chestImageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     @objc func launchContactPicker() {
