@@ -20,15 +20,10 @@
 		B8E48A0E24BF537E00AC30D2 /* Letter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0D24BF537E00AC30D2 /* Letter.storyboard */; };
 		B8E48A1024BF539E00AC30D2 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E48A0F24BF539E00AC30D2 /* LetterViewController.swift */; };
 		B8E48A1724BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */; };
-		B8E48A1824BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8E48A1924BF5A9700AC30D2 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */; };
-		B8E48A1A24BF5A9700AC30D2 /* GoogleMobileAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B8E48A1B24BF5A9700AC30D2 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */; };
-		B8E48A1C24BF5A9700AC30D2 /* nanopb.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B8E48A1D24BF5A9700AC30D2 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */; };
-		B8E48A1E24BF5A9700AC30D2 /* PromisesObjC.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B8E48A1F24BF5A9700AC30D2 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */; };
-		B8E48A2024BF5A9700AC30D2 /* GoogleUtilities.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		B8F44CD024BFB53F0084E1B6 /* OpenChest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F44CCF24BFB53F0084E1B6 /* OpenChest.storyboard */; };
 		B8F44CD224BFB5690084E1B6 /* OpenChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F44CD124BFB5690084E1B6 /* OpenChestViewController.swift */; };
 /* End PBXBuildFile section */
@@ -40,11 +35,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B8E48A2024BF5A9700AC30D2 /* GoogleUtilities.xcframework in Embed Frameworks */,
-				B8E48A1C24BF5A9700AC30D2 /* nanopb.xcframework in Embed Frameworks */,
-				B8E48A1A24BF5A9700AC30D2 /* GoogleMobileAds.framework in Embed Frameworks */,
-				B8E48A1824BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Embed Frameworks */,
-				B8E48A1E24BF5A9700AC30D2 /* PromisesObjC.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 1;
