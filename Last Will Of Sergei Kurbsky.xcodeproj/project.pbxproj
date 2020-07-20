@@ -86,7 +86,7 @@
 			children = (
 				B8E48A0924BED64400AC30D2 /* Settings.bundle */,
 				B8AEDC7324BE9ACF004DE733 /* Products */,
-				B8AEDC7424BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */,
+				B8AEDC7424BE9ACF004DE733 /* Last Will Of Sergei Kurbsky */,
 				B8E48A1124BF5A9700AC30D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -99,7 +99,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B8AEDC7424BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */ = {
+		B8AEDC7424BE9ACF004DE733 /* Last Will Of Sergei Kurbsky */ = {
 			isa = PBXGroup;
 			children = (
 				B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */,
@@ -107,7 +107,7 @@
 				B8AEDC8924BE9B44004DE733 /* Storyboards */,
 				B8AEDC8A24BE9B6F004DE733 /* UI */,
 			);
-			path = "The Last Will And Testament Of Sergei Kurbsky";
+			path = "Last Will Of Sergei Kurbsky";
 			sourceTree = "<group>";
 		};
 		B8AEDC8924BE9B44004DE733 /* Storyboards */ = {
@@ -167,9 +167,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B8AEDC7124BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */ = {
+		B8AEDC7124BE9ACF004DE733 /* Last Will Of Sergei Kurbsky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8AEDC8624BE9AD1004DE733 /* Build configuration list for PBXNativeTarget "The Last Will And Testament Of Sergei Kurbsky" */;
+			buildConfigurationList = B8AEDC8624BE9AD1004DE733 /* Build configuration list for PBXNativeTarget "Last Will Of Sergei Kurbsky" */;
 			buildPhases = (
 				B8AEDC6E24BE9ACF004DE733 /* Sources */,
 				B8AEDC6F24BE9ACF004DE733 /* Frameworks */,
@@ -180,7 +180,7 @@
 			);
 			dependencies = (
 			);
-			name = "The Last Will And Testament Of Sergei Kurbsky";
+			name = "Last Will Of Sergei Kurbsky";
 			productName = "The Last Will And Testament Of Sergei Kurbsky";
 			productReference = B8AEDC7224BE9ACF004DE733 /* Sergei Kurbsky.app */;
 			productType = "com.apple.product-type.application";
@@ -200,7 +200,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B8AEDC6D24BE9ACF004DE733 /* Build configuration list for PBXProject "The Last Will And Testament Of Sergei Kurbsky" */;
+			buildConfigurationList = B8AEDC6D24BE9ACF004DE733 /* Build configuration list for PBXProject "Last Will Of Sergei Kurbsky" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -213,7 +213,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B8AEDC7124BE9ACF004DE733 /* The Last Will And Testament Of Sergei Kurbsky */,
+				B8AEDC7124BE9ACF004DE733 /* Last Will Of Sergei Kurbsky */,
 			);
 		};
 /* End PBXProject section */
@@ -396,7 +396,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdk",
 				);
-				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Resources/Info.plist";
+				INFOPLIST_FILE = "Last Will Of Sergei Kurbsky/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -420,7 +420,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/GoogleMobileAdsSdk",
 				);
-				INFOPLIST_FILE = "The Last Will And Testament Of Sergei Kurbsky/Resources/Info.plist";
+				INFOPLIST_FILE = "Last Will Of Sergei Kurbsky/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -437,7 +437,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B8AEDC6D24BE9ACF004DE733 /* Build configuration list for PBXProject "The Last Will And Testament Of Sergei Kurbsky" */ = {
+		B8AEDC6D24BE9ACF004DE733 /* Build configuration list for PBXProject "Last Will Of Sergei Kurbsky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8AEDC8424BE9AD1004DE733 /* Debug */,
@@ -446,7 +446,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8AEDC8624BE9AD1004DE733 /* Build configuration list for PBXNativeTarget "The Last Will And Testament Of Sergei Kurbsky" */ = {
+		B8AEDC8624BE9AD1004DE733 /* Build configuration list for PBXNativeTarget "Last Will Of Sergei Kurbsky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B8AEDC8724BE9AD1004DE733 /* Debug */,
