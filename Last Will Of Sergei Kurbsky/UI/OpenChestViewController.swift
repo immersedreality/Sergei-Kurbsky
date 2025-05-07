@@ -11,7 +11,7 @@ import UIKit
 class OpenChestViewController: UIViewController {
 
     var countdownTimer = Timer()
-    var countDownStart = 10
+    var countDownStart = 6
     
     @IBAction func iAmReadyButtonTapped(_ sender: Any) {
 

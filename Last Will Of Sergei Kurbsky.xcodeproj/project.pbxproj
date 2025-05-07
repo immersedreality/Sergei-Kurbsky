@@ -3,27 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8AEDC7624BE9ACF004DE733 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */; };
+		B8AEDC7624BE9ACF004DE733 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC7524BE9ACF004DE733 /* SceneDelegate.swift */; };
 		B8AEDC7A24BE9ACF004DE733 /* ChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC7924BE9ACF004DE733 /* ChestViewController.swift */; };
 		B8AEDC7D24BE9ACF004DE733 /* Chest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC7B24BE9ACF004DE733 /* Chest.storyboard */; };
 		B8AEDC7F24BE9AD1004DE733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */; };
 		B8AEDC8224BE9AD1004DE733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8AEDC8024BE9AD1004DE733 /* LaunchScreen.storyboard */; };
 		B8AEDC8D24BE9DA6004DE733 /* LockImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AEDC8C24BE9DA6004DE733 /* LockImageView.swift */; };
+		B8D33BDC2DCBF0A400FAD5CB /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = B8D33BDB2DCBF0A400FAD5CB /* GoogleMobileAds */; };
 		B8DAD8B424BFC7A900FE4AD0 /* ChestOpen.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8DAD8B324BFC7A900FE4AD0 /* ChestOpen.wav */; };
 		B8E48A0724BEB47600AC30D2 /* Lock.flac in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0524BEB47600AC30D2 /* Lock.flac */; };
 		B8E48A0824BEB47600AC30D2 /* Unlock.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0624BEB47600AC30D2 /* Unlock.wav */; };
 		B8E48A0A24BED64400AC30D2 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0924BED64400AC30D2 /* Settings.bundle */; };
 		B8E48A0E24BF537E00AC30D2 /* Letter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8E48A0D24BF537E00AC30D2 /* Letter.storyboard */; };
 		B8E48A1024BF539E00AC30D2 /* LetterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E48A0F24BF539E00AC30D2 /* LetterViewController.swift */; };
-		B8E48A1724BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */; };
-		B8E48A1924BF5A9700AC30D2 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */; };
-		B8E48A1B24BF5A9700AC30D2 /* nanopb.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */; };
-		B8E48A1D24BF5A9700AC30D2 /* PromisesObjC.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */; };
-		B8E48A1F24BF5A9700AC30D2 /* GoogleUtilities.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */; };
 		B8F44CD024BFB53F0084E1B6 /* OpenChest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8F44CCF24BFB53F0084E1B6 /* OpenChest.storyboard */; };
 		B8F44CD224BFB5690084E1B6 /* OpenChestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F44CD124BFB5690084E1B6 /* OpenChestViewController.swift */; };
 /* End PBXBuildFile section */
@@ -43,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		B8AEDC7224BE9ACF004DE733 /* Sergei Kurbsky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sergei Kurbsky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B8AEDC7524BE9ACF004DE733 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B8AEDC7924BE9ACF004DE733 /* ChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChestViewController.swift; sourceTree = "<group>"; };
 		B8AEDC7C24BE9ACF004DE733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chest.storyboard; sourceTree = "<group>"; };
 		B8AEDC7E24BE9AD1004DE733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,11 +52,6 @@
 		B8E48A0924BED64400AC30D2 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		B8E48A0D24BF537E00AC30D2 /* Letter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Letter.storyboard; sourceTree = "<group>"; };
 		B8E48A0F24BF539E00AC30D2 /* LetterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterViewController.swift; sourceTree = "<group>"; };
-		B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleAppMeasurement.framework; path = GoogleMobileAdsSdk/GoogleAppMeasurement.framework; sourceTree = "<group>"; };
-		B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = GoogleMobileAdsSdk/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = nanopb.xcframework; path = GoogleMobileAdsSdk/nanopb.xcframework; sourceTree = "<group>"; };
-		B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PromisesObjC.xcframework; path = GoogleMobileAdsSdk/PromisesObjC.xcframework; sourceTree = "<group>"; };
-		B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = GoogleUtilities.xcframework; path = GoogleMobileAdsSdk/GoogleUtilities.xcframework; sourceTree = "<group>"; };
 		B8F44CCF24BFB53F0084E1B6 /* OpenChest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OpenChest.storyboard; sourceTree = "<group>"; };
 		B8F44CD124BFB5690084E1B6 /* OpenChestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenChestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,11 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E48A1F24BF5A9700AC30D2 /* GoogleUtilities.xcframework in Frameworks */,
-				B8E48A1B24BF5A9700AC30D2 /* nanopb.xcframework in Frameworks */,
-				B8E48A1924BF5A9700AC30D2 /* GoogleMobileAds.framework in Frameworks */,
-				B8E48A1724BF5A9700AC30D2 /* GoogleAppMeasurement.framework in Frameworks */,
-				B8E48A1D24BF5A9700AC30D2 /* PromisesObjC.xcframework in Frameworks */,
+				B8D33BDC2DCBF0A400FAD5CB /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +74,6 @@
 				B8E48A0924BED64400AC30D2 /* Settings.bundle */,
 				B8AEDC7324BE9ACF004DE733 /* Products */,
 				B8AEDC7424BE9ACF004DE733 /* Last Will Of Sergei Kurbsky */,
-				B8E48A1124BF5A9700AC30D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +88,7 @@
 		B8AEDC7424BE9ACF004DE733 /* Last Will Of Sergei Kurbsky */ = {
 			isa = PBXGroup;
 			children = (
-				B8AEDC7524BE9ACF004DE733 /* AppDelegate.swift */,
+				B8AEDC7524BE9ACF004DE733 /* SceneDelegate.swift */,
 				B8AEDC8B24BE9B89004DE733 /* Resources */,
 				B8AEDC8924BE9B44004DE733 /* Storyboards */,
 				B8AEDC8A24BE9B6F004DE733 /* UI */,
@@ -152,18 +138,6 @@
 			path = Audio;
 			sourceTree = "<group>";
 		};
-		B8E48A1124BF5A9700AC30D2 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B8E48A1224BF5A9700AC30D2 /* GoogleAppMeasurement.framework */,
-				B8E48A1324BF5A9700AC30D2 /* GoogleMobileAds.framework */,
-				B8E48A1624BF5A9700AC30D2 /* GoogleUtilities.xcframework */,
-				B8E48A1424BF5A9700AC30D2 /* nanopb.xcframework */,
-				B8E48A1524BF5A9700AC30D2 /* PromisesObjC.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,8 +165,9 @@
 		B8AEDC6A24BE9ACF004DE733 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1630;
 				ORGANIZATIONNAME = "Bozo Design Labs";
 				TargetAttributes = {
 					B8AEDC7124BE9ACF004DE733 = {
@@ -209,6 +184,9 @@
 				Base,
 			);
 			mainGroup = B8AEDC6924BE9ACF004DE733;
+			packageReferences = (
+				B8D33BDA2DCBF0A400FAD5CB /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
+			);
 			productRefGroup = B8AEDC7324BE9ACF004DE733 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -245,7 +223,7 @@
 				B8F44CD224BFB5690084E1B6 /* OpenChestViewController.swift in Sources */,
 				B8E48A1024BF539E00AC30D2 /* LetterViewController.swift in Sources */,
 				B8AEDC7A24BE9ACF004DE733 /* ChestViewController.swift in Sources */,
-				B8AEDC7624BE9ACF004DE733 /* AppDelegate.swift in Sources */,
+				B8AEDC7624BE9ACF004DE733 /* SceneDelegate.swift in Sources */,
 				B8AEDC8D24BE9DA6004DE733 /* LockImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +276,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -306,8 +285,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = LNM9247SFR;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -358,6 +339,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -366,8 +348,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = LNM9247SFR;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -390,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNM9247SFR;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -402,9 +387,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdl.sergeikurbsky;
 				PRODUCT_NAME = "Sergei Kurbsky";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -414,6 +401,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LNM9247SFR;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -426,9 +414,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.1;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bdl.sergeikurbsky;
 				PRODUCT_NAME = "Sergei Kurbsky";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -456,6 +446,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B8D33BDA2DCBF0A400FAD5CB /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B8D33BDB2DCBF0A400FAD5CB /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B8D33BDA2DCBF0A400FAD5CB /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B8AEDC6A24BE9ACF004DE733 /* Project object */;
 }

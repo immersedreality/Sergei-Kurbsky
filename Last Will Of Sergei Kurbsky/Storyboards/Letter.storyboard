@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Yw-Bk-HbZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Yw-Bk-HbZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,8 +18,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adI-J2-cuO" userLabel="Modal Swipe Indicator">
-                                <rect key="frame" x="187" y="56" width="40" height="6"/>
-                                <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="187" y="108" width="40" height="6"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="6" id="2qP-XF-MKG"/>
                                     <constraint firstAttribute="width" constant="40" id="9NA-49-65u"/>
@@ -29,10 +31,10 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Parchment" translatesAutoresizingMaskIntoConstraints="NO" id="aYV-2V-rLo">
-                                <rect key="frame" x="8" y="94" width="398" height="736"/>
+                                <rect key="frame" x="8" y="146" width="398" height="650"/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PnE-Hn-nlx">
-                                <rect key="frame" x="24" y="282" width="366" height="360"/>
+                                <rect key="frame" x="24" y="291" width="366" height="360"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">I, Sergei Kurbsky, have locked away a great treasure in the chest I’ve kept hidden in my home these last sixty years.
 
@@ -43,12 +45,13 @@ To whomever is able to open it: what awaits inside is for you.
 Warmest regards,
 Sergei
 
-P.S. Look beyond your immediate surroundings, embrace isolation but never go it alone, and knock quickly but gently to stay in contact.</string>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+P.S. Look beyond your immediate surroundings, embrace isolation but never go it alone, and stay in contact after practicing your lockpicking skills.</string>
+                                <color key="textColor" systemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="WyP-PI-e2f"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="aYV-2V-rLo" firstAttribute="top" secondItem="adI-J2-cuO" secondAttribute="bottom" constant="32" id="CUv-jh-B1B"/>
@@ -61,7 +64,6 @@ P.S. Look beyond your immediate surroundings, embrace isolation but never go it 
                             <constraint firstItem="PnE-Hn-nlx" firstAttribute="leading" secondItem="aYV-2V-rLo" secondAttribute="leading" constant="16" id="y2E-Bb-bDJ"/>
                             <constraint firstItem="aYV-2V-rLo" firstAttribute="leading" secondItem="WyP-PI-e2f" secondAttribute="leading" constant="8" id="y9c-zk-IZN"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="WyP-PI-e2f"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tb2-NH-des" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -71,5 +73,11 @@ P.S. Look beyond your immediate surroundings, embrace isolation but never go it 
     </scenes>
     <resources>
         <image name="Parchment" width="1600" height="2350"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

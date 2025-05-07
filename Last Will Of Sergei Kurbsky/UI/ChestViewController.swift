@@ -16,7 +16,7 @@ import GoogleMobileAds
 
 class ChestViewController: UIViewController {
     
-    @IBOutlet weak var adBannerView: GADBannerView!
+    @IBOutlet weak var adBannerView: BannerView!
 
     @IBOutlet weak var lockOneImageView: LockImageView!
     @IBOutlet weak var lockTwoImageView: LockImageView!
@@ -57,7 +57,6 @@ class ChestViewController: UIViewController {
         configureLocks()
         configureCreakSound()
         startEvents()
-        activateAudioSession()
         configureNetworkMonitor()
         configureServiceAdvertiserAndBrowser()
         configureContactPicker()
@@ -115,6 +114,10 @@ class ChestViewController: UIViewController {
         creakSound = try? AVAudioPlayer(contentsOf: creakURL)
     }
 
+    func activateAudioSession() {
+        try? audioSession.setActive(true)
+    }
+
     private func showLetterIfFirstTimeOpeningApp() {
         if UserDefaults.standard.bool(forKey: "UserIsReturning") == false {
             performSegue(withIdentifier: "PresentLetterViewController", sender: self)
@@ -150,7 +153,7 @@ class ChestViewController: UIViewController {
 
 }
 
-//LocksOneAndTwo
+//LocksOneTwoAndThree
 extension ChestViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -296,10 +299,6 @@ extension ChestViewController: AVAudioRecorderDelegate {
 
     }
 
-    private func activateAudioSession() {
-        try? audioSession.setActive(true)
-    }
-
 }
 
 //LockEight
@@ -346,9 +345,7 @@ extension ChestViewController: MCNearbyServiceBrowserDelegate {
     }
 
     func browser(_ browser: MCNearbyServiceBrowser, lostPeer peerID: MCPeerID) {
-        if self.lockNineImageView.checkIfUnlocked() == true {
-            self.lockNineImageView.lock()
-        }
+        return
     }
 
 }
@@ -359,8 +356,8 @@ extension ChestViewController: CNContactPickerDelegate {
     private func configureContactPicker() {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(launchContactPicker))
         tapGestureRecognizer.numberOfTapsRequired = 13
-        chestImageView.isUserInteractionEnabled = true
-        chestImageView.addGestureRecognizer(tapGestureRecognizer)
+        lockTenImageView.isUserInteractionEnabled = true
+        lockTenImageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     @objc func launchContactPicker() {
